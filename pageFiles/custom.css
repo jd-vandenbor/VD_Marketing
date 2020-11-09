@@ -11,7 +11,7 @@
 03. Slider area css
 04. About Product area css
 05. Services area css
-06. Features area css
+06. clients area css
 07. FAQs area css
 08. Why choose use area css
 09. Testimonials area css
@@ -174,7 +174,7 @@ nav.bootsnav.navbar-full .navbar-toggle{
 }
 
 .navbar-nav li{
-	padding: 0;
+	padding: 10px;
 	margin:0 2px;
 	transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
@@ -309,6 +309,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	position: relative;
 	top: 0px;
 	left: 0;
+	min-height: 100vh;
 	width: 100%;
 	background: url(../images/header.png) no-repeat bottom left;
 	background-size: auto 100%;
@@ -393,7 +394,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	line-height: 1.5em;
 }
 
-.btn-shopnow{
+.btn-con{
 	display: inline-block;
 	background: #fff;
 	color: var(--main);
@@ -406,7 +407,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	transition: all 0.3s;
 }
 
-.btn-shopnow:hover{
+.btn-con:hover{
 	background: #000;
 	color: #fff;
 }
@@ -485,15 +486,15 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	margin-bottom: 1.5em;
 }
 
-.about-feature{
+.about-client{
 	margin-top: 60px;
 }
 
-.about-feature-single{
+.about-client-single{
 	text-align: center;
 }
 
-.about-feature-single .icon-box{
+.about-client-single .icon-box{
 	display: block;
 	width: 70px;
 	height: 70px;
@@ -503,7 +504,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	position: relative;
 }
 
-.about-feature-single .icon-box i{
+.about-client-single .icon-box i{
 	font-size: 66px;
 	color: #160f00;
 	position: absolute;
@@ -511,7 +512,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	left: 10px;
 }
 
-.about-feature-single h3{
+.about-client-single h3{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	color: #242424;
@@ -586,40 +587,41 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 }
 
 /**************************************/
-/*****   06. Features area css    *****/
+/*****   06. clients area css    *****/
 /**************************************/
 
-.features{
+.clients{
 	padding: 80px 0;
 	background: #f4f2f2;
 }
 
-.feature1 {
+
+.client1 {
 	background-image: url("./paolo.png") !important;
 	height: 100%;
 }
 
-.feature-single{
+.client-single{
 	border-bottom: 1px solid #f4f2f2;
 	padding: 60px 0;
 }
 
-.feature-single:last-child{
+.client-single:last-child{
 	border: none;
 	padding-bottom: 0;
 }
 
-.feature-entry{
+.client-entry{
 	padding-top: 20px;
 }
 
-.feature-entry h3{
+.client-entry h3{
 	color: var(--secondary);
 	font-size: 30px;
 	font-weight: 600;
 }
 
-.feature-entry h4{
+.client-entry h4{
 	color: #242424;
 	font-size: 20px;
 	font-weight: 500;
@@ -627,26 +629,26 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	margin-bottom: 20px;
 }
 
-.feature-entry p{
+.client-entry p{
 	color: #aba9a9;
 	font-size: 14px;
 	line-height: 1.8em;
 	margin-bottom: 1.5em;
 }
 
-.feature-entry h5{
+.client-entry h5{
 	color: var(--secondary);
 	font-size: 18px;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.feature-image{
+.client-image{
 	text-align: center;
 	/* max-width: 65%; */
 }
 
-.feature-image img{
+.client-image img{
 	border-radius: 50%;
 }
 
@@ -655,7 +657,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 /*****************************************/
 
 .why-choose{
-	background: url(../images/why-choose-bg.jpg) no-repeat right center;
+
 	background-size: auto 100%;
 	padding: 80px 0;
 	position: relative;
@@ -708,7 +710,6 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 
 .why-choose-single p{
 	font-size: 12px;
-	color: #bbb7b7;
 	line-height: 1.5em;
 }
 
@@ -1012,6 +1013,9 @@ footer{
 		display: none;
 	}
 	
+	.header-image {
+		display: none;
+	}
 	.header-content{
 		margin-bottom: 40px;
 	}
@@ -1022,11 +1026,12 @@ footer{
 	
 	.banner{
 		padding: 180px 0 60px;
+		min-height: auto;
 	}
 	
 	.about-product,
 	.services,
-	.features,
+	.clients,
 	.faqs,
 	.why-choose,
 	.testimonials,
@@ -1034,7 +1039,7 @@ footer{
 		padding: 60px 0;
 	}
 	
-	.about-feature-single{
+	.about-client-single{
 		margin-bottom: 30px;
 	}
 	
@@ -1042,28 +1047,28 @@ footer{
 		font-size: 22px;
 	}
 	
-	.features .section-title{
+	.clients .section-title{
 		margin-bottom: 0;
 	}
 	
-	.feature-single{
+	.client-single{
 		padding: 40px 0;
 	}
 	
-	.feature-single .pull-right{
+	.client-single .pull-right{
 		float: none !important;
 		
 	}
 	
-	.feature-image{
+	.client-image{
 		margin-bottom: 30px;
 	}
 	
-	.feature-entry h3{
+	.client-entry h3{
 		font-size: 24px;
 	}
 	
-	.feature-entry h4{
+	.client-entry h4{
 		font-size: 18px;
 	}
 	
@@ -1073,6 +1078,10 @@ footer{
 	
 	.why-choose-single{
 		margin-bottom: 40px;
+	}
+
+	.why-choose{
+		background-position: auto;
 	}
 	
 	.testimonial-left{
